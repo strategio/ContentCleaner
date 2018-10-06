@@ -1,0 +1,20 @@
+<phpunit
+	bootstrap="./tests/phpunit/bootstrap.php"
+	beStrictAboutTestsThatDoNotTestAnything="false"
+	colors="true"
+>
+	<testsuites>
+		<testsuite>
+			<directory suffix=".php">./tests/phpunit/src/</directory>
+		</testsuite>
+	</testsuites>
+	<filter>
+		<whitelist>
+			<directory suffix=".php">./src/</directory>
+			<exclude>
+				<directory>./tests</directory>
+				<directory>./vendor</directory>
+			</exclude>
+		</whitelist>
+	</filter>
+</phpunit>

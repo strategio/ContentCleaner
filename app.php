@@ -9,3 +9,5 @@ Author URI: https://strategio.fr
 */
 
 require_once 'vendor/autoload.php';
+
+( new \Strategio\ContentCleaner\App() )->run();

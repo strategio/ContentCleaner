@@ -1,0 +1,27 @@
+{
+  "name": "clean-content",
+  "version": "1.0.0",
+  "description": "A plugin to clean up content",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "cypress": "^3.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strategio/ContentCleaner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/strategio/ContentCleaner/issues"
+  },
+  "homepage": "https://github.com/strategio/ContentCleaner#readme",
+  "scripts": {
+    "cypress:open": "wp db export before-cypress.sql & wp db import tests/cypress/fixtures/before.sql & cypress open",
+    "cypress:run": "wp db export before-cypress.sql & wp db import tests/cypress/fixtures/before.sql & cypress run"
+  }
+}
